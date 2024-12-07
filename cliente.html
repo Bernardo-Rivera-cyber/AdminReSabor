@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente - ReSabor</title>
+    <link rel="stylesheet" href="css/seleccion.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="imágenes/logo-resabor.png" alt="Logo ReSabor" class="navbar-logo">ReSabor</a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="empresas.html" class="active">Empresas</a></li>
+                <li><a href="consumidores.html">Consumidores</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Sección Cliente -->
+    <section class="cliente">
+        <h1 class="cliente-title">Platillos Disponibles</h1>
+        
+        <div class="platillos-container">
+            <!-- Ficha Platillo 1 -->
+            <div class="platillo">
+                <img src="imágenes/platillo1.jpg" alt="Platillo 1">
+                <h3>Platillo 1</h3>
+                <p>Delicioso platillo preparado con ingredientes frescos y locales. Ideal para disfrutar en familia.</p>
+                <input type="number" id="cantidad1" min="1" value="1" class="cantidad">
+                <button class="btn-comprar" onclick="agregarAlCarrito('Platillo 1', 100, 'cantidad1')">Agregar al carrito</button>
+            </div>
+            
+            <!-- Ficha Platillo 2 -->
+            <div class="platillo">
+                <img src="imágenes/platillo2.jpg" alt="Platillo 2">
+                <h3>Platillo 2</h3>
+                <p>Un platillo tradicional, perfecto para cualquier ocasión, lleno de sabor y frescura.</p>
+                <input type="number" id="cantidad2" min="1" value="1" class="cantidad">
+                <button class="btn-comprar" onclick="agregarAlCarrito('Platillo 2', 120, 'cantidad2')">Agregar al carrito</button>
+            </div>
+
+            <!-- Ficha Platillo 3 -->
+            <div class="platillo">
+                <img src="imágenes/platillo3.jpg" alt="Platillo 3">
+                <h3>Platillo 3</h3>
+                <p>Sabores exóticos en este platillo único, ideal para los amantes de la comida internacional.</p>
+                <input type="number" id="cantidad3" min="1" value="1" class="cantidad">
+                <button class="btn-comprar" onclick="agregarAlCarrito('Platillo 3', 150, 'cantidad3')">Agregar al carrito</button>
+            </div>
+        </div>
+
+        <button class="cta" onclick="verCarrito()">Ver mi carrito</button>
+
+        <div id="modalCarrito" class="modal">
+            <div class="modal-content">
+                <h2>Resumen del Pedido</h2>
+                <div id="resumenCarrito"></div>
+                <div class="modal-actions">
+                    <button onclick="cerrarCarrito()">Cerrar</button>
+                    <button onclick="enviarPedido()">Pedir</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

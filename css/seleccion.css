@@ -1,0 +1,252 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+    background-color: #e4b621;
+    padding: 10px 0;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex; /* Asegura que se comporte como un contenedor flexible */
+    align-items: center; /* Centra verticalmente el contenido */
+    height: 100%; /* O asegura que ocupe todo el espacio del contenedor */
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-logo {
+    height: 50px; /* Ajusta el tamaño del logo según sea necesario */
+    margin-right: 20px; /* Espacio entre el logo y el menú */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.cta {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Contenedor principal de la selección */
+.seleccion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+/* Estilo de los botones */
+.seleccion-button {
+    background-color: #ff9800; /* Color naranja */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Efecto hover para los botones */
+.seleccion-button:hover {
+    background-color: #e68900; /* Color más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+}
+
+/* Estilo de las imágenes de los botones */
+.seleccion-button img {
+    width: 200px; /* Tamaño de las imágenes */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Título de la sección */
+.seleccion-title {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333; /* Color del texto */
+}
+
+/* ====================================================== CLIENTE ====================================================== */
+
+/* Estilo para la página Cliente */
+.cliente {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.cliente-title {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.platillos-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.platillo {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.platillo img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.platillo h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.platillo p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
+
+.platillo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-comprar {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px;
+}
+
+.btn-comprar:hover {
+    background-color: #e08900;
+}
+
+.regresar {
+    margin-top: 30px;
+}
+
+.cta {
+    background-color: #e4b621;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.cta:hover {
+    background-color: #d1a11a;
+}
+
+/* ====================================================== PEDIDOS ====================================================== */
+
+/* Modal de carrito */
+.modal {
+    display: none; /* Por defecto está oculto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permite scroll si el contenido excede la pantalla */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centra verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+.modal-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e68900;
+}

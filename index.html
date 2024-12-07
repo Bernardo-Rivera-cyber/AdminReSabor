@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReSabor</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="imágenes/logo-resabor.png" alt="Logo ReSabor" class="navbar-logo">ReSabor</a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="empresas.html" class="active">Empresas</a></li>
+                <li><a href="consumidores.html">Consumidores</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal con carrusel -->
+    <section class="hero">
+        <div class="carousel">
+            <div class="carousel-item active">
+                <img src="imágenes/Designer.jpeg" alt="Imagen de comida 1">
+            </div>
+            <div class="carousel-item">
+                <img src="imágenes/Designer (1).jpeg" alt="Imagen de comida 2">
+            </div>
+            <div class="carousel-item">
+                <img src="imágenes/Designer (2).jpeg" alt="Imagen de comida 3">
+            </div>
+    
+            <!-- Agregamos los botones de navegación -->
+            <button class="prev" onclick="moveSlide(-1)" aria-label="Previous">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)" aria-label="Next">&#10095;</button>
+        </div>
+    
+        <div class="hero-text">
+            <h1>ReSabor: Revende y reduce el desperdicio</h1>
+            <p>Conectamos empresas y consumidores para aprovechar los alimentos de manera sostenible.</p>
+        </div>
+    </section>
+    
+    <!-- Sección de información -->
+    <section class="info">
+        <h2>¿Cómo funciona?</h2>
+        <div class="info-blocks">
+            <div class="info-item">
+                <img src="imágenes/icon-regis.png" alt="Icono 1">
+                <h3>Regístrate</h3>
+                <p>Empieza creando una cuenta y accede a ofertas de alimentos cercanos a ti.</p>
+            </div>
+            <div class="info-item">
+                <img src="imágenes/icon-explora.png" alt="Icono 2">
+                <h3>Explora</h3>
+                <p>Explora las diferentes opciones de alimentos que las empresas ofrecen para reventa.</p>
+            </div>
+            <div class="info-item">
+                <img src="imágenes/icon-compraevnta.png" alt="Icono 3">
+                <h3>Compra o Vende</h3>
+                <p>Compra alimentos a precios más bajos o vende tus productos para reducir el desperdicio.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de registro -->
+    <section class="form-section">
+        <h2>Regístrate para comenzar</h2>
+        <form id="registroForm">
+            <input type="text" name="nombre" placeholder="Nombre completo" required>
+            <input type="email" name="correo" placeholder="Correo electrónico" required>
+            <input type="password" name="contraseña" placeholder="Contraseña" required>
+            <button type="submit">Registrarse</button>
+        </form>
+        <div id="mensajeExito">¡Enviado exitosamente!</div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 ReSabor. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="#"><img src="imágenes/face.png" alt="Facebook"></a>
+                <a href="#"><img src="imágenes/insta.png" alt="Instagram"></a>
+                <a href="#"><img src="imágenes/x.png" alt="X"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresas - ReSabor</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="imágenes/logo-resabor.png" alt="Logo ReSabor" class="navbar-logo">ReSabor</a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="empresas.html" class="active">Empresas</a></li>
+                <li><a href="consumidores.html">Consumidores</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contacto-intro">
+        <h1>Contáctanos</h1>
+        <p>¿Tienes alguna duda, sugerencia o quieres formar parte del cambio? Estamos aquí para ayudarte. Puedes ponerte en contacto con nosotros a través del siguiente formulario o los medios disponibles.</p>
+    </section>
+    
+    <section class="contacto-form">
+        <h2>Formulario de Contacto</h2>
+        <form id="registroForm">
+            <input type="text" name="nombre" placeholder="Tu Nombre" required>
+            <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+            <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+        <div id="mensajeExito">¡Enviado exitosamente!</div>
+    </section>
+    
+    <section class="contacto-detalles">
+        <h2>Información de Contacto</h2>
+        <div class="detalles">
+            <div class="detalle">
+                <img src="imágenes/telefono.png" alt="Teléfono">
+                <p><strong>Teléfono (+52):</strong></p> ㅤ ㅤ <p> </p><p>55 3257 9479</p>
+            </div>
+            <div class="detalle">
+                <img src="imágenes/correo.png" alt="Correo">
+                <p><strong>Email:</strong> contacto@resabor.mx</p>
+            </div>
+            <div class="detalle">
+                <img src="imágenes/ubicacion.png" alt="Ubicación">
+                <p><strong>Dirección:</strong> San Juan Ixtayopan C. Delfino Renteria, Ciudad de México, México.</p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="map-container">
+        <!-- Google Maps Embed -->
+        <iframe 
+            src="https://www.google.com/maps?q=19.230858,-98.995047&hl=es;z=14&output=embed" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    
+        <!-- Botón o Enlace para abrir el mapa en Google Maps -->
+        <div class="map-link">
+            <a href="https://maps.app.goo.gl/DrpTYZ2rudd8smiGA" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="map-button">
+                Ver ubicación en Google Maps
+            </a>
+        </div>
+    </div>
+    
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 ReSabor. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="#"><img src="imágenes/face.png" alt="Facebook"></a>
+                <a href="#"><img src="imágenes/insta.png" alt="Instagram"></a>
+                <a href="#"><img src="imágenes/x.png" alt="X"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
